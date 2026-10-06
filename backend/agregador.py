@@ -1,22 +1,21 @@
 #!/usr/bin/env python3
 import json
 import requests
-import xml.etree.ElementTree as ET
 from datetime import datetime
 import os
 
-# Guardamos el archivo en la raíz del repositorio (una carpeta arriba de backend/)
+# lxml en lugar de xml.etree (soporta XPath real)
+from lxml import etree
+
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "camaras_oficiales.json")
 TIMEOUT = 60
 
-# Nos hacemos pasar por un navegador real para evitar bloqueos
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/json, text/plain, */*'
 }
 
 def fetch_meteogalicia():
-    """Descarga las cámaras de MeteoGalicia"""
     cameras = []
     url = "https://servizos.meteogalicia.gal/mgrss/observacion/jsonCamaras.action"
     print("Descargando MeteoGalicia...")
@@ -24,9 +23,7 @@ def fetch_meteogalicia():
         r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
         data = r.json()
-        lista = data.get('listaCamaras', [])
-        
-        for cam in lista:
+        for cam in data.get('listaCamaras', []):
             try:
                 lat = float(cam.get('lat'))
                 lon = float(cam.get('lon'))
@@ -35,8 +32,7 @@ def fetch_meteogalicia():
             cameras.append({
                 "id": f"mg_{cam.get('identificador', 'unknown')}",
                 "name": cam.get('nomeCamara', 'Cámara MeteoGalicia'),
-                "lat": lat,
-                "lon": lon,
+                "lat": lat, "lon": lon,
                 "source": "MeteoGalicia",
                 "source_url": "https://servizos.meteogalicia.gal/",
                 "image_url": cam.get('imaxeCamara'),
@@ -48,7 +44,8 @@ def fetch_meteogalicia():
     return cameras
 
 def fetch_dgt():
-    """Descarga las cámaras de la DGT con diagnóstico de tags"""
+    """Diagnóstico profundo para descubrir la estructura del XML de la DGT"""
+    from collections import Counter
     cameras = []
     xml_url = "https://nap.dgt.es/dataset/camaras-dgt-datex2-v3-7/resource/31f5727a-bbfe-4aa8-b1dc-d2fce1302e69/download/camaras_datex2_v37.xml"
     print("Descargando DGT...")
@@ -56,102 +53,64 @@ def fetch_dgt():
         r = requests.get(xml_url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
         print(f"   📦 Descargados {len(r.content)} bytes")
-        root = ET.fromstring(r.content)
         
-        # 🔍 DIAGNÓSTICO: Ver qué tags relacionados con CCTV existen
-        tags_vistos = {}
-        for elem in root.iter():
-            t = elem.tag.split('}')[-1]
-            tl = t.lower()
-            if 'ctv' in tl or 'camera' in tl or 'site' in tl:
-                tags_vistos[t] = tags_vistos.get(t, 0) + 1
-        print(f"   🔍 Tags CCTV encontrados: {dict(list(tags_vistos.items())[:15])}")
+        tree = etree.fromstring(r.content)
         
-        # Intentar varios nombres posibles de tag
-        records = []
-        for candidate_tag in [
-            'cctvSite', 'CctvSite', 'cctvSiteRecord', 'CctvSiteRecord',
-            'cctvCameraMetadataRecord', 'CctvCameraMetadataRecord',
-            'cctvCameraMetadata', 'CctvCameraMetadata',
-            'cctvCamera', 'CctvCamera'
-        ]:
-            found = root.findall(f'.//*[local-name()="{candidate_tag}"]')
-            if found:
-                print(f"   ✅ Encontrados {len(found)} con tag '{candidate_tag}'")
-                records = found
-                break
+        # 🕵️ DIAGNÓSTICO PROFUNDO
+        print(f"   🏷️  Root tag: {tree.tag}")
+        print(f"   🌐 Namespaces: {tree.nsmap}")
         
-        if not records:
-            print("   ⚠️ No se encontraron registros CCTV con ningún tag conocido")
-            return cameras
+        tags_counter = Counter()
+        for elem in tree.iter():
+            if isinstance(elem.tag, str):
+                tag_name = elem.tag.split('}')[-1]
+                tags_counter[tag_name] += 1
         
-        for record in records:
-            try:
-                lat, lon, name, img = None, None, 'Cámara DGT', None
-                for child in record.iter():
-                    tag = child.tag.split('}')[-1]
-                    if tag == 'latitude' and lat is None:
-                        lat = child.text
-                    elif tag == 'longitude' and lon is None:
-                        lon = child.text
-                    elif tag in ('cctvCameraIdentification', 'name') and name == 'Cámara DGT':
-                        if child.text:
-                            name = child.text
-                    elif tag in ('urlLinkAddress', 'imageUrl', 'href') and img is None:
-                        img = child.text
-                
-                if lat and lon:
-                    cam_id = record.attrib.get('id', f"dgt_{len(cameras)}")
-                    cameras.append({
-                        "id": f"dgt_{cam_id}",
-                        "name": name,
-                        "lat": float(lat),
-                        "lon": float(lon),
-                        "source": "DGT",
-                        "source_url": "https://nap.dgt.es/",
-                        "image_url": img,
-                        "extra": {}
-                    })
-            except Exception:
-                continue
+        print(f"   📋 Top 40 tags más comunes en el XML:")
+        for tag, count in tags_counter.most_common(40):
+            print(f"      {tag}: {count}")
         
-        print(f"✅ DGT: {len(cameras)} cámaras encontradas")
+        # Buscar cualquier tag que contenga 'lat' o 'coordinate'
+        print(f"   🔎 Tags con 'lat' o 'coord':")
+        for tag, count in tags_counter.items():
+            tl = tag.lower()
+            if 'lat' in tl or 'coord' in tl or 'point' in tl:
+                print(f"      {tag}: {count}")
+        
+        # Contar total de elementos
+        total = sum(1 for _ in tree.iter())
+        print(f"   📊 Total elementos en el XML: {total}")
+        
     except Exception as e:
         print(f"❌ DGT falló: {e}")
+        import traceback
+        traceback.print_exc()
     return cameras
 
 def fetch_madrid():
-    """Descarga las cámaras de Madrid desde el KML oficial"""
     cameras = []
     url = "https://datos.madrid.es/egob/catalogo/202088-0-trafico-camaras.kml"
     print("Descargando Madrid...")
     try:
         r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
-        root = ET.fromstring(r.content)
-        
-        for pm in root.iter():
-            if 'Placemark' in pm.tag:
-                name = 'Cámara Madrid'
-                lat, lon, img = None, None, None
+        tree = etree.fromstring(r.content)
+        for pm in tree.iter():
+            if 'Placemark' in str(pm.tag):
+                name, lat, lon, img = 'Cámara Madrid', None, None, None
                 for child in pm.iter():
                     tag = child.tag.split('}')[-1]
-                    if tag == 'name':
-                        name = child.text
-                    elif tag == 'coordinates':
+                    if tag == 'name': name = child.text
+                    elif tag == 'coordinates' and child.text:
                         coords = child.text.strip().split(',')
                         if len(coords) >= 2:
-                            lon = coords[0]
-                            lat = coords[1]
-                    elif tag == 'href':
-                        img = child.text
-                
+                            lon, lat = coords[0], coords[1]
+                    elif tag == 'href': img = child.text
                 if lat and lon:
                     cameras.append({
                         "id": f"mad_{name.replace(' ', '_')}",
                         "name": name,
-                        "lat": float(lat),
-                        "lon": float(lon),
+                        "lat": float(lat), "lon": float(lon),
                         "source": "Madrid",
                         "source_url": "https://datos.madrid.es/",
                         "image_url": img,
@@ -166,24 +125,16 @@ def aggregate_all():
     all_cams = []
     print(f"🔄 Iniciando: {datetime.now().isoformat()}")
     
-    mg_cams = fetch_meteogalicia()
-    dgt_cams = fetch_dgt()
-    mad_cams = fetch_madrid()
-    
-    all_cams.extend(mg_cams)
-    all_cams.extend(dgt_cams)
-    all_cams.extend(mad_cams)
+    all_cams.extend(fetch_meteogalicia())
+    all_cams.extend(fetch_dgt())
+    all_cams.extend(fetch_madrid())
     
     if len(all_cams) == 0:
         print("⚠️ Ninguna fuente devolvió datos. Añadiendo cámara de prueba.")
         all_cams.append({
-            "id": "test_1",
-            "name": "Cámara de Prueba (Madrid)",
-            "lat": 40.4168,
-            "lon": -3.7038,
-            "source": "Test",
-            "source_url": "https://github.com",
-            "image_url": None,
+            "id": "test_1", "name": "Cámara de Prueba (Madrid)",
+            "lat": 40.4168, "lon": -3.7038, "source": "Test",
+            "source_url": "https://github.com", "image_url": None,
             "extra": {"concello": "Madrid"}
         })
     
