@@ -1,5 +1,3984 @@
 {
-  "generated_at": "2026-10-06T17:34:15.912780",
-  "total": 0,
-  "cameras": []
+  "generated_at": "2026-10-06T17:53:58.362099",
+  "total": 391,
+  "cameras": [
+    {
+      "id": "mg_10900",
+      "name": "Ribadeo",
+      "lat": 43.5412,
+      "lon": -7.03614,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Ribadeoporto/ultima.jpg",
+      "extra": {
+        "concello": "Ribadeo"
+      }
+    },
+    {
+      "id": "mg_10901",
+      "name": "Burela",
+      "lat": 43.656,
+      "lon": -7.34435,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Burela/ultima.jpg",
+      "extra": {
+        "concello": "Burela"
+      }
+    },
+    {
+      "id": "mg_10104",
+      "name": "Penedo do Galo",
+      "lat": 43.66078,
+      "lon": -7.56288,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Penedodogalo/ultima.jpg",
+      "extra": {
+        "concello": "Viveiro"
+      }
+    },
+    {
+      "id": "mg_10911",
+      "name": "Cariño",
+      "lat": 43.734,
+      "lon": -7.86335,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Carinho/ultima.jpg",
+      "extra": {
+        "concello": "Cariño"
+      }
+    },
+    {
+      "id": "mg_10092",
+      "name": "Punta Candieira",
+      "lat": 43.7043,
+      "lon": -8.05246,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/PuntaCandieira/ultima.jpg",
+      "extra": {
+        "concello": "Cedeira"
+      }
+    },
+    {
+      "id": "mg_10141",
+      "name": "Aldea Nova",
+      "lat": 43.5625,
+      "lon": -8.13282,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/AldeaNova/ultima.jpg",
+      "extra": {
+        "concello": "Narón"
+      }
+    },
+    {
+      "id": "mg_14000",
+      "name": "Coruña-Dique",
+      "lat": 43.3651,
+      "lon": -8.37471,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Corunha/ultima.jpg",
+      "extra": {
+        "concello": "A Coruña"
+      }
+    },
+    {
+      "id": "mg_14003",
+      "name": "Coruña-Langosteira",
+      "lat": 43.3472,
+      "lon": -8.53118,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Langosteira/ultima.jpg",
+      "extra": {
+        "concello": "Arteixo"
+      }
+    },
+    {
+      "id": "mg_10800",
+      "name": "Camariñas",
+      "lat": 43.1245,
+      "lon": -9.17831,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Camarinhas/ultima.jpg",
+      "extra": {
+        "concello": "Camariñas"
+      }
+    },
+    {
+      "id": "mg_75000",
+      "name": "Muros",
+      "lat": 42.80925,
+      "lon": -9.077076,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MedioRural/Muros/ultima.jpg",
+      "extra": {
+        "concello": "Muros"
+      }
+    },
+    {
+      "id": "mg_10902",
+      "name": "Portosín",
+      "lat": 42.7656,
+      "lon": -8.94848,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Portosin/ultima.jpg",
+      "extra": {
+        "concello": "Porto do Son"
+      }
+    },
+    {
+      "id": "mg_10049",
+      "name": "Corrubedo",
+      "lat": 42.5552,
+      "lon": -9.0286,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Corrubedo/ultima.jpg",
+      "extra": {
+        "concello": "Ribeira"
+      }
+    },
+    {
+      "id": "mg_10134",
+      "name": "Sálvora",
+      "lat": 42.47135,
+      "lon": -9.005851,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Salvora/ultima.jpg",
+      "extra": {
+        "concello": "Ribeira"
+      }
+    },
+    {
+      "id": "mg_10085",
+      "name": "Corón",
+      "lat": 42.5801,
+      "lon": -8.80471,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Coron/ultima.jpg",
+      "extra": {
+        "concello": "Vilanova de Arousa"
+      }
+    },
+    {
+      "id": "mg_10133",
+      "name": "Xesteiras",
+      "lat": 42.6756,
+      "lon": -8.58618,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Radar/ultima.jpg",
+      "extra": {
+        "concello": "Cuntis"
+      }
+    },
+    {
+      "id": "mg_10903",
+      "name": "Aguete",
+      "lat": 42.375942,
+      "lon": -8.728966,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Aguete2/ultima.jpg",
+      "extra": {
+        "concello": "Marín"
+      }
+    },
+    {
+      "id": "mg_10904",
+      "name": "Ons Praia",
+      "lat": 42.376904,
+      "lon": -8.932206,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Onsplaya/ultima.jpg",
+      "extra": {
+        "concello": "Bueu"
+      }
+    },
+    {
+      "id": "mg_10904",
+      "name": "Ons Porto",
+      "lat": 42.37694,
+      "lon": -8.932135,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Onspuerto/ultima.jpg",
+      "extra": {
+        "concello": "Bueu"
+      }
+    },
+    {
+      "id": "mg_10908",
+      "name": "Cíes-Rodas",
+      "lat": 42.2189,
+      "lon": -8.90402,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Ciesrodas/ultima.jpg",
+      "extra": {
+        "concello": "Vigo"
+      }
+    },
+    {
+      "id": "mg_10907",
+      "name": "Cíes-Faro-Sur",
+      "lat": 42.21409,
+      "lon": -8.914742,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/CiesFaroSur/ultima.jpg",
+      "extra": {
+        "concello": "Vigo"
+      }
+    },
+    {
+      "id": "mg_10907",
+      "name": "Cíes-Faro-Norte",
+      "lat": 42.214195,
+      "lon": -8.914727,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/CiesFaroNorte/ultima.jpg",
+      "extra": {
+        "concello": "Vigo"
+      }
+    },
+    {
+      "id": "mg_10067",
+      "name": "Castrove",
+      "lat": 42.45841,
+      "lon": -8.722065,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Castrove/ultima.jpg",
+      "extra": {
+        "concello": "Poio"
+      }
+    },
+    {
+      "id": "mg_10906",
+      "name": "Cangas",
+      "lat": 42.26044,
+      "lon": -8.782591,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cangas/ultima.jpg",
+      "extra": {
+        "concello": "Cangas"
+      }
+    },
+    {
+      "id": "mg_10169",
+      "name": "Baiona",
+      "lat": 42.1155,
+      "lon": -8.83718,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Baiona/ultima.jpg",
+      "extra": {
+        "concello": "Baiona"
+      }
+    },
+    {
+      "id": "mg_10062",
+      "name": "Ancares",
+      "lat": 42.8208,
+      "lon": -6.9229,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Ancares/ultima.jpg",
+      "extra": {
+        "concello": "Cervantes"
+      }
+    },
+    {
+      "id": "mg_10132",
+      "name": "O Cebreiro",
+      "lat": 42.707184,
+      "lon": -7.047038,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cebreiro/ultima.jpg",
+      "extra": {
+        "concello": "Pedrafita do Cebreiro"
+      }
+    },
+    {
+      "id": "mg_50500",
+      "name": "San Lázaro",
+      "lat": 42.8866,
+      "lon": -8.52099,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Santiago/ultima.jpg",
+      "extra": {
+        "concello": "Santiago de Compostela"
+      }
+    },
+    {
+      "id": "mg_10130",
+      "name": "Lardeira",
+      "lat": 42.3752,
+      "lon": -6.78346,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Lardeira/ultima.jpg",
+      "extra": {
+        "concello": "Carballeda de Valdeorras"
+      }
+    },
+    {
+      "id": "mg_10164",
+      "name": "Ríotorto",
+      "lat": 43.351746,
+      "lon": -7.265624,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Riotorto/ultima.jpg",
+      "extra": {
+        "concello": "Riotorto"
+      }
+    },
+    {
+      "id": "mg_10168",
+      "name": "Cospeito",
+      "lat": 43.24025,
+      "lon": -7.555114,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cospeito/ultima.jpg",
+      "extra": {
+        "concello": "Cospeito"
+      }
+    },
+    {
+      "id": "mg_10910",
+      "name": "Monforte",
+      "lat": 42.52398,
+      "lon": -7.511221,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Monforte/ultima.jpg",
+      "extra": {
+        "concello": "Monforte de Lemos"
+      }
+    },
+    {
+      "id": "mg_10912",
+      "name": "Cristosende",
+      "lat": 42.386322,
+      "lon": -7.488853,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cristosende/ultima.jpg",
+      "extra": {
+        "concello": "A Teixeira"
+      }
+    },
+    {
+      "id": "mg_10913",
+      "name": "Cabo do Mundo",
+      "lat": 42.565315,
+      "lon": -7.670684,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cabodomundo/ultima.jpg",
+      "extra": {
+        "concello": "O Saviñao"
+      }
+    },
+    {
+      "id": "mg_10914",
+      "name": "Alto do Rodicio",
+      "lat": 42.29801,
+      "lon": -7.595267,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Rodicio/ultima.jpg",
+      "extra": {
+        "concello": "Maceda"
+      }
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.466063829633,
+      "lon": -3.68894207537291,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4657761535436,
+      "lon": -3.68963237924212,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4589506600118,
+      "lon": -3.68559709254018,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4520280139944,
+      "lon": -3.69048871765836,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4469910764164,
+      "lon": -3.70406984281203,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4348920483828,
+      "lon": -3.71914660133047,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4392000528541,
+      "lon": -3.71764690637595,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4202726781817,
+      "lon": -3.71992556005439,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4232117722576,
+      "lon": -3.71080716985496,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4201376524201,
+      "lon": -3.70549647487068,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4819889836805,
+      "lon": -3.68529531291997,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4379867257183,
+      "lon": -3.69041825734863,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4454684074731,
+      "lon": -3.68579406660153,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.458595515585,
+      "lon": -3.67666986774559,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4515456734308,
+      "lon": -3.67746270592335,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4373283568245,
+      "lon": -3.67736195699703,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4288894509383,
+      "lon": -3.70224251218166,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4269172685617,
+      "lon": -3.6600965777467,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4248980850836,
+      "lon": -3.67587620471999,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4280136411192,
+      "lon": -3.66891397966186,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4066547944021,
+      "lon": -3.67023731893022,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3911362769227,
+      "lon": -3.69496549134601,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4050292623528,
+      "lon": -3.70256810904181,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4076578999155,
+      "lon": -3.69310930664668,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4091889304854,
+      "lon": -3.69215886323192,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.418975488442,
+      "lon": -3.69311379706586,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4188902498848,
+      "lon": -3.69666543418588,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.41665894556,
+      "lon": -3.70028134568391,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.433609670381,
+      "lon": -3.70441422114003,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4275889842274,
+      "lon": -3.69554323168411,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4330661243512,
+      "lon": -3.68849693470159,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4416509581911,
+      "lon": -3.69471144855766,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4386519670048,
+      "lon": -3.70431105084027,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4421976843761,
+      "lon": -3.70399519664177,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4208869217821,
+      "lon": -3.68441648165817,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4151876298632,
+      "lon": -3.69383605438619,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4141769836337,
+      "lon": -3.72412704749693,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3978141759504,
+      "lon": -3.71590574066187,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4205096910542,
+      "lon": -3.66417259856301,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4204941037297,
+      "lon": -3.66418124213958,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4057679556986,
+      "lon": -3.66653120075293,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4057225773378,
+      "lon": -3.66656152725347,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4445786103989,
+      "lon": -3.5828908885005,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4190031585941,
+      "lon": -3.71289166209937,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.419013285552,
+      "lon": -3.71322368670892,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4169289553178,
+      "lon": -3.71316805774781,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4169384127931,
+      "lon": -3.7133971691409,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4765166846076,
+      "lon": -3.72052884948616,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3924259771051,
+      "lon": -3.67672677513625,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4264887245659,
+      "lon": -3.73405326511502,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4346488208148,
+      "lon": -3.73890775169405,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3620757350818,
+      "lon": -3.75388390493238,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4838688702002,
+      "lon": -3.66421711572923,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4832996639864,
+      "lon": -3.66373168155164,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4857739012734,
+      "lon": -3.71674428829043,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3516156532895,
+      "lon": -3.69289138703954,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5047727461688,
+      "lon": -3.66487905008187,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4946309486061,
+      "lon": -3.64964227959373,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3730556578857,
+      "lon": -3.76556743966716,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.403651557445,
+      "lon": -3.66596263436384,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4107049430342,
+      "lon": -3.6551592978091,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3685723045833,
+      "lon": -3.60967908068689,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4789110413546,
+      "lon": -3.69111882683206,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4748636501762,
+      "lon": -3.68916470090093,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4451483627037,
+      "lon": -3.64641731693595,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.410233366347,
+      "lon": -3.71403239385324,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4067575616644,
+      "lon": -3.68364710588772,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3850864445122,
+      "lon": -3.71760936339191,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3984502661488,
+      "lon": -3.66966496355964,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4302710763766,
+      "lon": -3.71172786377166,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3943923770882,
+      "lon": -3.64013452689016,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3833904680728,
+      "lon": -3.6253224901263,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4245226477132,
+      "lon": -3.66871138009731,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4006226293067,
+      "lon": -3.71447722530376,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4041209229378,
+      "lon": -3.72059622646489,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.413965827844,
+      "lon": -3.72085481645511,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4379400160201,
+      "lon": -3.6862269715792,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4494053747709,
+      "lon": -3.6511381676961,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4377536763851,
+      "lon": -3.68295411554663,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4306444614469,
+      "lon": -3.68911010129197,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4009280532517,
+      "lon": -3.69923151686566,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4372667568143,
+      "lon": -3.72167810663169,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4372661534638,
+      "lon": -3.72172006759321,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4143551026534,
+      "lon": -3.7293943944027,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3884080927332,
+      "lon": -3.73178741461319,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4589230186244,
+      "lon": -3.66773733699182,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3916381745692,
+      "lon": -3.65380697696926,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4825133436259,
+      "lon": -3.71748288697177,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4794013004621,
+      "lon": -3.70419310325823,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4802449927643,
+      "lon": -3.71302899940183,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4438605520631,
+      "lon": -3.71041531313365,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4574207484658,
+      "lon": -3.70166784379408,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4738403675146,
+      "lon": -3.70220739398887,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4557585589879,
+      "lon": -3.65641825882976,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4522480942437,
+      "lon": -3.66755949796724,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4287540905853,
+      "lon": -3.7219935472809,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4076896421648,
+      "lon": -3.67868084652383,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3755693664418,
+      "lon": -3.69507802449755,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4730709329769,
+      "lon": -3.73604829552557,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4949327249723,
+      "lon": -3.66619102334593,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4900013095212,
+      "lon": -3.69873245176535,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4585892509038,
+      "lon": -3.61700383129781,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4419519245505,
+      "lon": -3.62356284237662,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4476300554801,
+      "lon": -3.6262760555862,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4669098830069,
+      "lon": -3.65421010155642,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4684081000148,
+      "lon": -3.64659856893002,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.476523545986,
+      "lon": -3.63836857164805,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4488347678587,
+      "lon": -3.74152941892531,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4689655801023,
+      "lon": -3.75042423866799,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4745147317434,
+      "lon": -3.74817912543411,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4739870077803,
+      "lon": -3.68736447015628,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4295195084571,
+      "lon": -3.67979696748537,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.446473189837,
+      "lon": -3.69123399594272,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.394460575941,
+      "lon": -3.69474455396037,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3956240202939,
+      "lon": -3.6802354830712,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4143742504454,
+      "lon": -3.62756168186269,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4076381696573,
+      "lon": -3.63126933651617,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.454459044628,
+      "lon": -3.62263706811027,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3891415056695,
+      "lon": -3.64388450158001,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3857042569999,
+      "lon": -3.7616499842713,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4115766758191,
+      "lon": -3.6697968983246,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4487783765525,
+      "lon": -3.67767457554995,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4859047008195,
+      "lon": -3.69402554488404,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4229444022489,
+      "lon": -3.72814535583846,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.471107847124,
+      "lon": -3.71180572384229,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4182283309521,
+      "lon": -3.62379090298775,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4349356071215,
+      "lon": -3.68873616586719,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4252254718021,
+      "lon": -3.68395131585049,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4250598496886,
+      "lon": -3.68421152438939,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4317687029554,
+      "lon": -3.66027001272525,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4605598420622,
+      "lon": -3.69862464728239,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4211709422502,
+      "lon": -3.61107227403309,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4354876571773,
+      "lon": -3.60655910102406,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4345634117235,
+      "lon": -3.61206624650029,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4245026553321,
+      "lon": -3.62831821945704,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3974317962423,
+      "lon": -3.6942382233272,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4048742254318,
+      "lon": -3.69055635917563,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3878445242957,
+      "lon": -3.69917659333754,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3931470251125,
+      "lon": -3.70611049020367,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3853600489275,
+      "lon": -3.69596372391544,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3696565546441,
+      "lon": -3.72007341440265,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3739016317604,
+      "lon": -3.71950648988237,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3734222062276,
+      "lon": -3.71232185696519,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3708211308595,
+      "lon": -3.69436528337476,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3906444966537,
+      "lon": -3.71009141538884,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3642146867766,
+      "lon": -3.69396814398249,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.417954778044,
+      "lon": -3.69935620035459,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4197412324238,
+      "lon": -3.69975868513452,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4691607831339,
+      "lon": -3.58143003603218,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4671795472619,
+      "lon": -3.6743438808406,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3765005891021,
+      "lon": -3.74990064698377,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4710344657796,
+      "lon": -3.67213428975523,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4602439566372,
+      "lon": -3.66490162389502,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4062050476221,
+      "lon": -3.66566325833329,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4185444314752,
+      "lon": -3.65824747837116,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4446712905133,
+      "lon": -3.65952087194156,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4819491011951,
+      "lon": -3.70451610535889,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4728310237106,
+      "lon": -3.72759053880321,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3737996875754,
+      "lon": -3.73384844330134,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3867801212278,
+      "lon": -3.6149193416598,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4842502114278,
+      "lon": -3.67383487662946,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4129047170404,
+      "lon": -3.69340359300525,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4221853516363,
+      "lon": -3.69156977082507,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4318037449321,
+      "lon": -3.671609921812,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4492200202142,
+      "lon": -3.60858175543823,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4088247427617,
+      "lon": -3.69199494558893,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4075063499438,
+      "lon": -3.69341037171968,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4070283642133,
+      "lon": -3.71184263390804,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4072821988773,
+      "lon": -3.71141188347022,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4008816421402,
+      "lon": -3.63606528706361,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4390500922993,
+      "lon": -3.71289238974273,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4053509390143,
+      "lon": -3.72467621339365,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4525248480484,
+      "lon": -3.77944276036352,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.367777305632,
+      "lon": -3.66371261408021,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4189623509677,
+      "lon": -3.69311403112182,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3929025079723,
+      "lon": -3.74094202082545,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3977573545496,
+      "lon": -3.70228360048551,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3706003574835,
+      "lon": -3.61378546308108,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4222062549054,
+      "lon": -3.61319936511967,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4169090690885,
+      "lon": -3.62333895540511,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4453457475838,
+      "lon": -3.6615278333932,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4826258438618,
+      "lon": -3.68254146933024,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3599003920589,
+      "lon": -3.59159437754714,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4760987242818,
+      "lon": -3.67468192298501,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.46054054008,
+      "lon": -3.59306511901547,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3414630815143,
+      "lon": -3.69280149865512,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4240200736488,
+      "lon": -3.60396397975781,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3967313941576,
+      "lon": -3.77420459948146,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4232333960769,
+      "lon": -3.63941422115586,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4910328797468,
+      "lon": -3.68616469992965,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.380652085913,
+      "lon": -3.6862740486794,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4869466366154,
+      "lon": -3.65898087710185,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3681416829336,
+      "lon": -3.60168115723861,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4390471220064,
+      "lon": -3.67341670552222,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4918238877517,
+      "lon": -3.72397242904606,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.439995825341,
+      "lon": -3.72651854580146,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5025916447439,
+      "lon": -3.69756230979756,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4331776994507,
+      "lon": -3.64811064128344,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.462667863938,
+      "lon": -3.63537557462152,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4225365108839,
+      "lon": -3.65624784220915,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4295984016217,
+      "lon": -3.70581751458576,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4346127288799,
+      "lon": -3.65591622727829,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4341201162155,
+      "lon": -3.73476414459806,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4723052873904,
+      "lon": -3.67576610387655,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3879370105194,
+      "lon": -3.7446955391277,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.421854180601,
+      "lon": -3.68011544899939,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4098135911148,
+      "lon": -3.6097958826721,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4215214122775,
+      "lon": -3.67615805461547,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3990089373927,
+      "lon": -3.76702601163017,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3845695972481,
+      "lon": -3.73956602001263,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3972061927995,
+      "lon": -3.61953873065548,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3637437062297,
+      "lon": -3.7437134941009,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3498042300503,
+      "lon": -3.70583891179341,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4272607143562,
+      "lon": -3.64717854798268,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3816779614045,
+      "lon": -3.6688505947086,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4408157535109,
+      "lon": -3.6570275137738,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4728869409824,
+      "lon": -3.64899143602643,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4381637964732,
+      "lon": -3.66094267631849,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4434917114467,
+      "lon": -3.66735050255565,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4838570370042,
+      "lon": -3.69956658534205,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3791481221291,
+      "lon": -3.77021217670163,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.385126849529,
+      "lon": -3.71211253213426,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4149478310179,
+      "lon": -3.71345017239289,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.472867692515,
+      "lon": -3.67655804601578,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3824453423973,
+      "lon": -3.68832412372811,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5073323273441,
+      "lon": -3.68533116194693,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3989479600039,
+      "lon": -3.64713299584755,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5038585744937,
+      "lon": -3.65897711919387,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3677933697632,
+      "lon": -3.74106706873687,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5163587068471,
+      "lon": -3.68571299881316,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4629059268475,
+      "lon": -3.77930602849782,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3938085348633,
+      "lon": -3.77141387210447,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3723050468375,
+      "lon": -3.67999069707902,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4213954729926,
+      "lon": -3.70792579444456,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4042368677112,
+      "lon": -3.68066967329419,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4349305303449,
+      "lon": -3.67489615086937,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.430173225874,
+      "lon": -3.68376769612522,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4206033485361,
+      "lon": -3.68870489704929,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4404771870555,
+      "lon": -3.68061258318133,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4529500216313,
+      "lon": -3.70313500336684,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.434694605352,
+      "lon": -3.69862495088783,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4991842881993,
+      "lon": -3.68637845649008,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4851344686515,
+      "lon": -3.70991504517341,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4851302909588,
+      "lon": -3.68409719369014,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5109897375835,
+      "lon": -3.66690236564622,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5022259093677,
+      "lon": -3.67591052697848,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4289490133594,
+      "lon": -3.71520020689882,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4273150244917,
+      "lon": -3.71841611336834,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4249694357525,
+      "lon": -3.72554173645758,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4070874265259,
+      "lon": -3.74585997813592,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3935431010624,
+      "lon": -3.72355767068919,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3854223621052,
+      "lon": -3.72376702209834,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3732029841046,
+      "lon": -3.7423299641474,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3973489619218,
+      "lon": -3.66733971637406,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.381348866548,
+      "lon": -3.65298654378498,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3821196997675,
+      "lon": -3.66361481542804,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3764660057986,
+      "lon": -3.65961848612103,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4104909664278,
+      "lon": -3.65824534225716,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.408067003884,
+      "lon": -3.64613636777787,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4300278602194,
+      "lon": -3.6325256083517,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.429423903327,
+      "lon": -3.64384088662517,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4576324073919,
+      "lon": -3.64409281916329,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5006180313677,
+      "lon": -3.65893468463974,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4837344488658,
+      "lon": -3.64810845897706,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3488444461609,
+      "lon": -3.67515523698498,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3814080913085,
+      "lon": -3.62436939613124,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4758403357952,
+      "lon": -3.58238046047001,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3992440565473,
+      "lon": -3.60304124910282,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4670914957143,
+      "lon": -3.66604382485338,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4663496792272,
+      "lon": -3.66756550343018,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4917593345837,
+      "lon": -3.67175057574646,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4490921552689,
+      "lon": -3.66627569499123,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4487593160815,
+      "lon": -3.66711201445233,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4618906878572,
+      "lon": -3.66384507313014,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4051283067728,
+      "lon": -3.65897922814275,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3867895362457,
+      "lon": -3.68996926211941,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4115801480847,
+      "lon": -3.67647234908077,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3642615092121,
+      "lon": -3.77740038561248,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4523425155143,
+      "lon": -3.69502596035371,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4901206715704,
+      "lon": -3.71618127599255,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4712086149766,
+      "lon": -3.72051837312943,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4981118484398,
+      "lon": -3.6688027964132,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.5081870953342,
+      "lon": -3.67798991945315,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4481447200916,
+      "lon": -3.72804791633482,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4382851218764,
+      "lon": -3.73237255386224,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4509218019204,
+      "lon": -3.65239182650725,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3769874357041,
+      "lon": -3.6303875442991,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3315557850406,
+      "lon": -3.71422780978537,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3840790845591,
+      "lon": -3.74685788819195,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3728656488284,
+      "lon": -3.74192714550153,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3843406857371,
+      "lon": -3.63357051718817,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.403805183769,
+      "lon": -3.59509638981506,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.463454259265,
+      "lon": -3.61600271534155,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4256693358544,
+      "lon": -3.69051644920119,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3998912326586,
+      "lon": -3.7635441597815,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4957345505403,
+      "lon": -3.71940418462156,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4330085071683,
+      "lon": -3.60028795955883,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.45174331282,
+      "lon": -3.68100999649692,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4162722660263,
+      "lon": -3.6691913523674,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4656469075677,
+      "lon": -3.71925063312904,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4574764709666,
+      "lon": -3.71141074055254,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4414182459852,
+      "lon": -3.67882585841773,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4421379086836,
+      "lon": -3.68265616214598,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4870724135348,
+      "lon": -3.65127453449851,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.422232348297,
+      "lon": -3.71305820445716,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4218609896957,
+      "lon": -3.71326229798142,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.424697230686,
+      "lon": -3.71589367488431,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.404172969913,
+      "lon": -3.65422755339084,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4845216617603,
+      "lon": -3.64267312439754,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4913820750026,
+      "lon": -3.66055385775412,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4890634880499,
+      "lon": -3.65689926454099,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4866796850374,
+      "lon": -3.63282184169891,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4955505412947,
+      "lon": -3.62370473595821,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4822830655911,
+      "lon": -3.61880625058682,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.495632209707,
+      "lon": -3.61613452071854,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4949222810245,
+      "lon": -3.60852130835182,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4974393082562,
+      "lon": -3.65410576732496,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4879388219076,
+      "lon": -3.61261743970981,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4358572378833,
+      "lon": -3.67917703030844,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4074410639233,
+      "lon": -3.68870261478617,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4056700427818,
+      "lon": -3.68508947463532,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4809750023532,
+      "lon": -3.67585228259416,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4769031732665,
+      "lon": -3.74157075878951,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4571963023399,
+      "lon": -3.7298157174036,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4590641757846,
+      "lon": -3.69023949186136,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4014340682418,
+      "lon": -3.67483137890131,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3998873281694,
+      "lon": -3.68488382491894,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4379639694623,
+      "lon": -3.63810859940847,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4699271498434,
+      "lon": -3.63848865709898,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4517394554037,
+      "lon": -3.68576395772991,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4385455214077,
+      "lon": -3.70016658869225,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4306887232509,
+      "lon": -3.71645078384628,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4136193484023,
+      "lon": -3.7285230015619,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3981036467894,
+      "lon": -3.75632903617117,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4008300960053,
+      "lon": -3.74478144857255,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3992968001188,
+      "lon": -3.73365161010312,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3923522549902,
+      "lon": -3.75823369210462,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3849464583796,
+      "lon": -3.6936262061544,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4850904876097,
+      "lon": -3.6084330465517,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.409958496564,
+      "lon": -3.73862215347763,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4681777792129,
+      "lon": -3.67802522450796,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4760407659047,
+      "lon": -3.6686726947186,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4057696943506,
+      "lon": -3.56114830419718,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4069807360048,
+      "lon": -3.55268534354393,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.3748523460537,
+      "lon": -3.77647692540259,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4010192379252,
+      "lon": -3.75940412187175,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4326749657018,
+      "lon": -3.68356851362521,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4183710512614,
+      "lon": -3.6762963603616,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4415004497139,
+      "lon": -3.69208721525549,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4471143818412,
+      "lon": -3.70834772875158,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4458613266677,
+      "lon": -3.71506566676649,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4331108427897,
+      "lon": -3.68682184407938,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4311282252931,
+      "lon": -3.6624479787291,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4330369654689,
+      "lon": -3.63425551607552,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4710081175801,
+      "lon": -3.65791035900476,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4416174030438,
+      "lon": -3.64077197765198,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    },
+    {
+      "id": "mad_Cámara_Madrid",
+      "name": "Cámara Madrid",
+      "lat": 40.4994604128288,
+      "lon": -3.69859280057546,
+      "source": "Madrid",
+      "source_url": "https://datos.madrid.es/",
+      "image_url": null,
+      "extra": {}
+    }
+  ]
 }
