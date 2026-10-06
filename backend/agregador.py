@@ -3,8 +3,6 @@ import json
 import requests
 from datetime import datetime
 import os
-
-# lxml en lugar de xml.etree (soporta XPath real)
 from lxml import etree
 
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "camaras_oficiales.json")
@@ -43,9 +41,17 @@ def fetch_meteogalicia():
         print(f"❌ MeteoGalicia falló: {e}")
     return cameras
 
+
+def get_text(elem, xpath_expr):
+    """Helper: devuelve el texto del primer resultado de un XPath, o None."""
+    result = elem.xpath(xpath_expr)
+    if result and result[0].text:
+        return result[0].text.strip()
+    return None
+
+
 def fetch_dgt():
-    """Diagnóstico profundo para descubrir la estructura del XML de la DGT"""
-    from collections import Counter
+    """Parser definitivo de la DGT (tags: device, pointLocation, latitude, longitude, deviceUrl)"""
     cameras = []
     xml_url = "https://nap.dgt.es/dataset/camaras-dgt-datex2-v3-7/resource/31f5727a-bbfe-4aa8-b1dc-d2fce1302e69/download/camaras_datex2_v37.xml"
     print("Descargando DGT...")
@@ -56,36 +62,63 @@ def fetch_dgt():
         
         tree = etree.fromstring(r.content)
         
-        # 🕵️ DIAGNÓSTICO PROFUNDO
-        print(f"   🏷️  Root tag: {tree.tag}")
-        print(f"   🌐 Namespaces: {tree.nsmap}")
+        # Buscar TODOS los elementos <device> en cualquier namespace
+        devices = tree.xpath('//*[local-name()="device"]')
+        print(f"   🔍 Encontrados {len(devices)} elementos <device>")
         
-        tags_counter = Counter()
-        for elem in tree.iter():
-            if isinstance(elem.tag, str):
-                tag_name = elem.tag.split('}')[-1]
-                tags_counter[tag_name] += 1
+        for idx, dev in enumerate(devices):
+            try:
+                # Coordenadas: pueden estar anidadas dentro de pointCoordinates
+                lat = get_text(dev, './/*[local-name()="latitude"]')
+                lon = get_text(dev, './/*[local-name()="longitude"]')
+                
+                if not lat or not lon:
+                    continue
+                
+                # URL de la imagen
+                img = get_text(dev, './/*[local-name()="deviceUrl"]')
+                
+                # Información extra
+                road = get_text(dev, './/*[local-name()="roadName"]') or ''
+                km = get_text(dev, './/*[local-name()="kilometerPoint"]') or ''
+                province = get_text(dev, './/*[local-name()="province"]') or ''
+                type_dev = get_text(dev, './/*[local-name()="typeOfDevice"]') or ''
+                
+                # Nombre descriptivo
+                name_parts = []
+                if road:
+                    name_parts.append(road)
+                if km:
+                    name_parts.append(f"km {km}")
+                if province:
+                    name_parts.append(f"({province})")
+                name = " - ".join(name_parts) if name_parts else f"Cámara DGT #{idx+1}"
+                
+                cameras.append({
+                    "id": f"dgt_{idx+1}",
+                    "name": name,
+                    "lat": float(lat),
+                    "lon": float(lon),
+                    "source": "DGT",
+                    "source_url": "https://nap.dgt.es/",
+                    "image_url": img,
+                    "extra": {
+                        "road": road,
+                        "km": km,
+                        "province": province,
+                        "type": type_dev
+                    }
+                })
+            except Exception as e:
+                continue
         
-        print(f"   📋 Top 40 tags más comunes en el XML:")
-        for tag, count in tags_counter.most_common(40):
-            print(f"      {tag}: {count}")
-        
-        # Buscar cualquier tag que contenga 'lat' o 'coordinate'
-        print(f"   🔎 Tags con 'lat' o 'coord':")
-        for tag, count in tags_counter.items():
-            tl = tag.lower()
-            if 'lat' in tl or 'coord' in tl or 'point' in tl:
-                print(f"      {tag}: {count}")
-        
-        # Contar total de elementos
-        total = sum(1 for _ in tree.iter())
-        print(f"   📊 Total elementos en el XML: {total}")
-        
+        print(f"✅ DGT: {len(cameras)} cámaras encontradas")
     except Exception as e:
         print(f"❌ DGT falló: {e}")
         import traceback
         traceback.print_exc()
     return cameras
+
 
 def fetch_madrid():
     cameras = []
@@ -121,6 +154,7 @@ def fetch_madrid():
         print(f"❌ Madrid falló: {e}")
     return cameras
 
+
 def aggregate_all():
     all_cams = []
     print(f"🔄 Iniciando: {datetime.now().isoformat()}")
@@ -147,6 +181,7 @@ def aggregate_all():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"💾 Proceso terminado. Total guardado: {len(all_cams)}")
+
 
 if __name__ == "__main__":
     aggregate_all()
