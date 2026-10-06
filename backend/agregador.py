@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 from lxml import etree
 from datetime import datetime
 
-OUTPUT_FILE = "../camaras_oficiales.json"
+OUTPUT_FILE = "camaras_oficiales.json"
 TIMEOUT = 30
 
 NS = {
