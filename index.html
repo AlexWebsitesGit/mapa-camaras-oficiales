@@ -3,84 +3,255 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cámaras Oficiales</title>
+<title>Cámaras Oficiales de España</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: system-ui, sans-serif; }
+  body { font-family: -apple-system, system-ui, sans-serif; }
   #map { height: 100vh; width: 100%; }
-  .camera-popup { max-width: 320px; }
-  .camera-popup img { max-width: 100%; border-radius: 6px; margin-top: 8px; }
+  
+  .camera-popup { max-width: 360px; }
+  .camera-popup .badge {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; color: white; margin-bottom: 8px;
+  }
+  .camera-popup h4 {
+    margin: 4px 0; font-size: 15px; line-height: 1.3; color: #222;
+  }
+  .camera-popup .meta {
+    font-size: 12px; color: #666; margin: 4px 0;
+  }
+  .camera-popup .img-wrapper {
+    margin-top: 10px; border-radius: 8px; overflow: hidden;
+    background: #f0f0f0; position: relative; cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  .camera-popup .img-wrapper img {
+    width: 100%; height: auto; display: block;
+    max-height: 240px; object-fit: cover;
+    transition: transform 0.2s;
+  }
+  .camera-popup .img-wrapper:hover img {
+    transform: scale(1.03);
+  }
+  .camera-popup .img-wrapper::after {
+    content: "🔍 Ampliar";
+    position: absolute; bottom: 8px; right: 8px;
+    background: rgba(0,0,0,0.75); color: white;
+    padding: 4px 10px; border-radius: 6px;
+    font-size: 11px; font-weight: 600;
+  }
+  .camera-popup .btn-full {
+    display: block; width: 100%; margin-top: 10px;
+    padding: 10px; background: #0066cc; color: white;
+    text-align: center; text-decoration: none;
+    border-radius: 6px; font-weight: 600; font-size: 13px;
+    transition: background 0.2s;
+  }
+  .camera-popup .btn-full:hover { background: #0055aa; }
+  .camera-popup .no-img {
+    padding: 20px; text-align: center; color: #999; font-size: 12px;
+    background: #f9f9f9; border-radius: 8px; margin-top: 10px;
+  }
+  .camera-popup .source-line {
+    margin-top: 8px; font-size: 10px; color: #999; text-align: right;
+  }
+  .camera-popup .source-line a { color: #0066cc; text-decoration: none; }
+  
   .status-panel {
     position: absolute; top: 20px; right: 20px;
     background: white; padding: 14px 18px; border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15); z-index: 1000; font-size: 13px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15); z-index: 1000;
+    font-size: 13px; min-width: 200px;
   }
+  .status-panel h3 { font-size: 13px; margin-bottom: 8px; color: #333; }
+  .status-panel .stat {
+    display: flex; justify-content: space-between;
+    padding: 3px 0; border-bottom: 1px solid #f0f0f0;
+  }
+  .status-panel .stat:last-child { border-bottom: none; font-weight: 700; margin-top: 6px; padding-top: 6px; border-top: 2px solid #eee; }
+  .status-panel .dot {
+    display: inline-block; width: 8px; height: 8px;
+    border-radius: 50%; margin-right: 6px;
+  }
+  
   .filter-controls {
     position: absolute; bottom: 30px; left: 20px;
     background: white; padding: 12px 16px; border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15); z-index: 1000; font-size: 13px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15); z-index: 1000;
+    font-size: 13px;
   }
-  .filter-controls label { display: flex; gap: 6px; padding: 3px 0; cursor: pointer; }
+  .filter-controls strong {
+    display: block; margin-bottom: 8px; font-size: 11px; color: #666;
+    letter-spacing: 0.5px;
+  }
+  .filter-controls label {
+    display: flex; align-items: center; gap: 6px;
+    padding: 3px 0; cursor: pointer;
+  }
+  .filter-controls input { accent-color: #0066cc; }
+  
   #loading {
-    position: absolute; inset: 0; background: rgba(255,255,255,0.9);
+    position: absolute; inset: 0;
+    background: rgba(255,255,255,0.95);
     display: flex; align-items: center; justify-content: center;
     z-index: 2000; font-size: 18px; color: #666;
+    flex-direction: column; gap: 10px;
   }
+  #loading .spinner {
+    width: 40px; height: 40px;
+    border: 4px solid #e0e0e0;
+    border-top-color: #0066cc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
 </style>
 </head>
 <body>
+
 <div id="map"></div>
-<div id="loading">🔄 Cargando cámaras...</div>
-<div class="status-panel"><strong id="total">0</strong> cámaras</div>
-<div class="filter-controls" id="filters"></div>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <div>Cargando cámaras oficiales...</div>
+</div>
+
+<div class="status-panel">
+  <h3>📊 Cámaras cargadas</h3>
+  <div id="stats"></div>
+</div>
+
+<div class="filter-controls" id="filters">
+  <strong>FILTRAR FUENTES</strong>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
-const map = L.map('map').setView([40.4168, -3.7038], 6);
+const COLORS = {
+  'DGT': '#003366',
+  'MeteoGalicia': '#00aaff',
+  'Madrid': '#cc0000',
+  'Test': '#666666'
+};
+const SOURCE_NAMES = {
+  'DGT': 'DGT (Carreteras del Estado)',
+  'MeteoGalicia': 'MeteoGalicia',
+  'Madrid': 'Madrid',
+  'Test': 'Prueba'
+};
+
+const map = L.map('map', { zoomControl: true }).setView([40.4168, -3.7038], 6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap', maxZoom: 19
 }).addTo(map);
 
-const cluster = L.markerClusterGroup({ maxClusterRadius: 50, chunkedLoading: true });
+const cluster = L.markerClusterGroup({
+  maxClusterRadius: 50,
+  chunkedLoading: true,
+  showCoverageOnHover: false
+});
 map.addLayer(cluster);
 
-const colors = { 'DGT': '#003366', 'MeteoGalicia': '#0066cc', 'Madrid Calle 30': '#cc0000' };
 let allCameras = [];
-const active = new Set(Object.keys(colors));
+const active = new Set();
 
 function icon(color) {
   return L.divIcon({
-    html: `<div style="background:${color};width:22px;height:22px;border-radius:50%;border:3px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3);"></div>`,
-    iconSize: [22, 22], iconAnchor: [11, 11], popupAnchor: [0, -11]
+    html: `<div style="
+      background:${color};width:22px;height:22px;border-radius:50%;
+      border:3px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.4);
+      display:flex;align-items:center;justify-content:center;
+      font-size:11px;
+    ">📹</div>`,
+    iconSize: [22, 22], iconAnchor: [11, 11], popupAnchor: [0, -12]
   });
 }
 
-async function load() {
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+function buildPopup(cam) {
+  const color = COLORS[cam.source] || '#666';
+  const sourceName = SOURCE_NAMES[cam.source] || cam.source;
+  
+  let metaHtml = '';
+  if (cam.extra?.road) metaHtml += `<div class="meta">🛣️ ${escapeHtml(cam.extra.road)}${cam.extra.km ? ' · km ' + escapeHtml(cam.extra.km) : ''}</div>`;
+  if (cam.extra?.province) metaHtml += `<div class="meta">📍 ${escapeHtml(cam.extra.province)}</div>`;
+  if (cam.extra?.concello) metaHtml += `<div class="meta">📍 ${escapeHtml(cam.extra.concello)}</div>`;
+  
+  let imgHtml = '';
+  if (cam.image_url) {
+    // referrerpolicy="no-referrer" es CLAVE para saltarse el bloqueo de hotlinking de la DGT
+    imgHtml = `
+      <div class="img-wrapper" onclick="window.open('${escapeHtml(cam.image_url)}', '_blank')">
+        <img src="${escapeHtml(cam.image_url)}" 
+             referrerpolicy="no-referrer"
+             loading="lazy"
+             alt="Cámara"
+             onerror="this.parentElement.innerHTML='<div class=&quot;no-img&quot;>📷 Imagen no disponible</div>'">
+      </div>
+      <a class="btn-full" href="${escapeHtml(cam.image_url)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">
+        🔍 Ver cámara completa
+      </a>
+    `;
+  } else {
+    imgHtml = `<div class="no-img">📷 Sin imagen disponible</div>`;
+  }
+  
+  return `
+    <div class="camera-popup">
+      <span class="badge" style="background:${color}">${escapeHtml(sourceName)}</span>
+      <h4>${escapeHtml(cam.name)}</h4>
+      ${metaHtml}
+      ${imgHtml}
+      <div class="source-line">
+        Fuente: <a href="${escapeHtml(cam.source_url)}" target="_blank" rel="noopener">${escapeHtml(cam.source)}</a>
+      </div>
+    </div>
+  `;
+}
+
+async function loadCameras() {
   try {
     const r = await fetch('camaras_oficiales.json?t=' + Date.now());
     const data = await r.json();
     allCameras = data.cameras || [];
-    document.getElementById('total').textContent = allCameras.length;
-    buildFilters();
+    
+    // Activar todas las fuentes que existan
+    const sources = [...new Set(allCameras.map(c => c.source))];
+    sources.forEach(s => active.add(s));
+    
+    buildFilters(sources);
+    updateStats();
     render();
+    
+    document.getElementById('loading').style.display = 'none';
   } catch (e) {
-    document.getElementById('loading').textContent = '❌ Error al cargar datos';
-    return;
+    console.error(e);
+    document.getElementById('loading').innerHTML = '<div style="color:#cc0000;">❌ Error al cargar los datos</div>';
   }
-  document.getElementById('loading').style.display = 'none';
 }
 
-function buildFilters() {
-  const sources = [...new Set(allCameras.map(c => c.source))];
+function buildFilters(sources) {
   const el = document.getElementById('filters');
-  el.innerHTML = '<strong style="font-size:11px;color:#666;">FUENTES</strong>';
+  el.innerHTML = '<strong>FILTRAR FUENTES</strong>';
   sources.forEach(s => {
+    const color = COLORS[s] || '#666';
+    const count = allCameras.filter(c => c.source === s).length;
     const label = document.createElement('label');
-    label.innerHTML = `<input type="checkbox" checked data-src="${s}"> ${s}`;
+    label.innerHTML = `
+      <input type="checkbox" checked data-src="${s}">
+      <span class="dot" style="background:${color}"></span>
+      ${SOURCE_NAMES[s] || s} <span style="color:#999;font-size:11px;">(${count})</span>
+    `;
     label.querySelector('input').addEventListener('change', e => {
       e.target.checked ? active.add(s) : active.delete(s);
       render();
@@ -89,21 +260,38 @@ function buildFilters() {
   });
 }
 
-function render() {
-  cluster.clearLayers();
-  allCameras.filter(c => active.has(c.source)).forEach(c => {
-    const color = colors[c.source] || '#666';
-    const popup = `
-      <div class="camera-popup">
-        <span style="background:${color};color:white;padding:2px 8px;border-radius:12px;font-size:11px;">${c.source}</span>
-        <strong style="display:block;margin-top:6px;">${c.name}</strong>
-        ${c.image_url ? `<img src="${c.image_url}" onerror="this.style.display='none'">` : '<div style="margin-top:8px;font-size:12px;color:#999;">📷 Sin imagen</div>'}
+function updateStats() {
+  const el = document.getElementById('stats');
+  const counts = {};
+  allCameras.forEach(c => counts[c.source] = (counts[c.source] || 0) + 1);
+  
+  let html = '';
+  Object.entries(counts).sort((a,b) => b[1]-a[1]).forEach(([s, n]) => {
+    html += `
+      <div class="stat">
+        <span><span class="dot" style="background:${COLORS[s]||'#666'}"></span>${SOURCE_NAMES[s]||s}</span>
+        <span>${n}</span>
       </div>`;
-    L.marker([c.lat, c.lon], { icon: icon(color) }).bindPopup(popup, { maxWidth: 340 }).addTo(cluster);
   });
+  html += `<div class="stat"><span>TOTAL</span><span>${allCameras.length}</span></div>`;
+  el.innerHTML = html;
 }
 
-load();
+function render() {
+  cluster.clearLayers();
+  const filtered = allCameras.filter(c => active.has(c.source));
+  
+  filtered.forEach(cam => {
+    const color = COLORS[cam.source] || '#666';
+    const marker = L.marker([cam.lat, cam.lon], { icon: icon(color) });
+    marker.bindPopup(buildPopup(cam), { maxWidth: 380, minWidth: 280 });
+    cluster.addLayer(marker);
+  });
+  
+  console.log(`Renderizadas ${filtered.length} de ${allCameras.length} cámaras`);
+}
+
+loadCameras();
 </script>
 </body>
 </html>
