@@ -7,7 +7,7 @@ import os
 
 # Guardamos el archivo en la raíz del repositorio (una carpeta arriba de backend/)
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "camaras_oficiales.json")
-TIMEOUT = 30
+TIMEOUT = 60
 
 # Nos hacemos pasar por un navegador real para evitar bloqueos
 HEADERS = {
@@ -48,28 +48,60 @@ def fetch_meteogalicia():
     return cameras
 
 def fetch_dgt():
-    """Descarga las cámaras de la DGT desde el NAP oficial"""
+    """Descarga las cámaras de la DGT con diagnóstico de tags"""
     cameras = []
-    # URL OFICIAL Y ACTUALIZADA del Punto de Acceso Nacional (NAP)
     xml_url = "https://nap.dgt.es/dataset/camaras-dgt-datex2-v3-7/resource/31f5727a-bbfe-4aa8-b1dc-d2fce1302e69/download/camaras_datex2_v37.xml"
     print("Descargando DGT...")
     try:
         r = requests.get(xml_url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
+        print(f"   📦 Descargados {len(r.content)} bytes")
         root = ET.fromstring(r.content)
         
-        for record in root.iter():
-            if 'cctvCameraMetadataRecord' in record.tag:
-                cam_id = record.attrib.get('id', 'unknown')
+        # 🔍 DIAGNÓSTICO: Ver qué tags relacionados con CCTV existen
+        tags_vistos = {}
+        for elem in root.iter():
+            t = elem.tag.split('}')[-1]
+            tl = t.lower()
+            if 'ctv' in tl or 'camera' in tl or 'site' in tl:
+                tags_vistos[t] = tags_vistos.get(t, 0) + 1
+        print(f"   🔍 Tags CCTV encontrados: {dict(list(tags_vistos.items())[:15])}")
+        
+        # Intentar varios nombres posibles de tag
+        records = []
+        for candidate_tag in [
+            'cctvSite', 'CctvSite', 'cctvSiteRecord', 'CctvSiteRecord',
+            'cctvCameraMetadataRecord', 'CctvCameraMetadataRecord',
+            'cctvCameraMetadata', 'CctvCameraMetadata',
+            'cctvCamera', 'CctvCamera'
+        ]:
+            found = root.findall(f'.//*[local-name()="{candidate_tag}"]')
+            if found:
+                print(f"   ✅ Encontrados {len(found)} con tag '{candidate_tag}'")
+                records = found
+                break
+        
+        if not records:
+            print("   ⚠️ No se encontraron registros CCTV con ningún tag conocido")
+            return cameras
+        
+        for record in records:
+            try:
                 lat, lon, name, img = None, None, 'Cámara DGT', None
                 for child in record.iter():
-                    tag = child.tag.split('}')[-1] # Quitamos el namespace
-                    if tag == 'latitude': lat = child.text
-                    elif tag == 'longitude': lon = child.text
-                    elif tag == 'cctvCameraIdentification': name = child.text
-                    elif tag == 'urlLinkAddress': img = child.text
+                    tag = child.tag.split('}')[-1]
+                    if tag == 'latitude' and lat is None:
+                        lat = child.text
+                    elif tag == 'longitude' and lon is None:
+                        lon = child.text
+                    elif tag in ('cctvCameraIdentification', 'name') and name == 'Cámara DGT':
+                        if child.text:
+                            name = child.text
+                    elif tag in ('urlLinkAddress', 'imageUrl', 'href') and img is None:
+                        img = child.text
                 
                 if lat and lon:
+                    cam_id = record.attrib.get('id', f"dgt_{len(cameras)}")
                     cameras.append({
                         "id": f"dgt_{cam_id}",
                         "name": name,
@@ -80,6 +112,9 @@ def fetch_dgt():
                         "image_url": img,
                         "extra": {}
                     })
+            except Exception:
+                continue
+        
         print(f"✅ DGT: {len(cameras)} cámaras encontradas")
     except Exception as e:
         print(f"❌ DGT falló: {e}")
@@ -101,13 +136,15 @@ def fetch_madrid():
                 lat, lon, img = None, None, None
                 for child in pm.iter():
                     tag = child.tag.split('}')[-1]
-                    if tag == 'name': name = child.text
+                    if tag == 'name':
+                        name = child.text
                     elif tag == 'coordinates':
                         coords = child.text.strip().split(',')
                         if len(coords) >= 2:
                             lon = coords[0]
                             lat = coords[1]
-                    elif tag == 'href': img = child.text
+                    elif tag == 'href':
+                        img = child.text
                 
                 if lat and lon:
                     cameras.append({
