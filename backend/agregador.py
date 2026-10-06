@@ -3,9 +3,10 @@ import json
 import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
+import os
 
-# Guardamos el archivo en la raíz del repositorio
-OUTPUT_FILE = "../camaras_oficiales.json"
+# Guardamos el archivo en la raíz del repositorio (una carpeta arriba de backend/)
+OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "camaras_oficiales.json")
 TIMEOUT = 30
 
 # Nos hacemos pasar por un navegador real para evitar bloqueos
@@ -15,7 +16,7 @@ HEADERS = {
 }
 
 def fetch_meteogalicia():
-    """Descarga las cámaras de MeteoGalicia (URL CORREGIDA)"""
+    """Descarga las cámaras de MeteoGalicia"""
     cameras = []
     url = "https://servizos.meteogalicia.gal/mgrss/observacion/jsonCamaras.action"
     print("Descargando MeteoGalicia...")
@@ -23,7 +24,6 @@ def fetch_meteogalicia():
         r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
         data = r.json()
-        # La estructura correcta es {"listaCamaras": [ ... ]}
         lista = data.get('listaCamaras', [])
         
         for cam in lista:
@@ -48,17 +48,16 @@ def fetch_meteogalicia():
     return cameras
 
 def fetch_dgt():
-    """Descarga las cámaras de la DGT (URL CORREGIDA y parser mejorado)"""
+    """Descarga las cámaras de la DGT desde el NAP oficial"""
     cameras = []
-    # URL CORREGIDA: infocar.dgt.es en lugar de nap.dgt.es
-    xml_url = "http://infocar.dgt.es/datex2/dgt/CCTVSiteTablePublication/all/content.xml"
+    # URL OFICIAL Y ACTUALIZADA del Punto de Acceso Nacional (NAP)
+    xml_url = "https://nap.dgt.es/dataset/camaras-dgt-datex2-v3-7/resource/31f5727a-bbfe-4aa8-b1dc-d2fce1302e69/download/camaras_datex2_v37.xml"
     print("Descargando DGT...")
     try:
         r = requests.get(xml_url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
         root = ET.fromstring(r.content)
         
-        # Contamos cuántas cámaras hay
         for record in root.iter():
             if 'cctvCameraMetadataRecord' in record.tag:
                 cam_id = record.attrib.get('id', 'unknown')
@@ -87,19 +86,15 @@ def fetch_dgt():
     return cameras
 
 def fetch_madrid():
-    """Descarga las cámaras de Madrid (URL CORREGIDA)"""
+    """Descarga las cámaras de Madrid desde el KML oficial"""
     cameras = []
-    # URL CORREGIDA: El archivo KML con las cámaras de Madrid
     url = "https://datos.madrid.es/egob/catalogo/202088-0-trafico-camaras.kml"
     print("Descargando Madrid...")
     try:
         r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
-        # Usamos ElementTree para parsear el KML
         root = ET.fromstring(r.content)
         
-        # En KML, los nombres de los tags incluyen el namespace
-        # Buscamos todos los Placemark que contengan la información de la cámara
         for pm in root.iter():
             if 'Placemark' in pm.tag:
                 name = 'Cámara Madrid'
@@ -108,7 +103,6 @@ def fetch_madrid():
                     tag = child.tag.split('}')[-1]
                     if tag == 'name': name = child.text
                     elif tag == 'coordinates':
-                        # En KML, las coordenadas vienen como "lon,lat,alt"
                         coords = child.text.strip().split(',')
                         if len(coords) >= 2:
                             lon = coords[0]
@@ -135,7 +129,6 @@ def aggregate_all():
     all_cams = []
     print(f"🔄 Iniciando: {datetime.now().isoformat()}")
     
-    # Intentamos descargar de las fuentes oficiales
     mg_cams = fetch_meteogalicia()
     dgt_cams = fetch_dgt()
     mad_cams = fetch_madrid()
@@ -144,7 +137,6 @@ def aggregate_all():
     all_cams.extend(dgt_cams)
     all_cams.extend(mad_cams)
     
-    # Si ninguna fuente devolvió datos, añadimos una cámara de prueba para que veas que funciona
     if len(all_cams) == 0:
         print("⚠️ Ninguna fuente devolvió datos. Añadiendo cámara de prueba.")
         all_cams.append({
