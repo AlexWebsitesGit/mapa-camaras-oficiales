@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T01:05:23.795177",
+  "generated_at": "2026-10-07T07:46:54.002321",
   "total": 2345,
   "cameras": [
     {
@@ -31206,8 +31206,8 @@
     {
       "id": "mad_Cámara_Madrid",
       "name": "Cámara Madrid",
-      "lat": 40.4691607831339,
-      "lon": -3.58143003603218,
+      "lat": 40.4688516853202,
+      "lon": -3.58094063116055,
       "source": "Madrid",
       "source_url": "https://datos.madrid.es/",
       "image_url": null,
@@ -31566,8 +31566,8 @@
     {
       "id": "mad_Cámara_Madrid",
       "name": "Cámara Madrid",
-      "lat": 40.46054054008,
-      "lon": -3.59306511901547,
+      "lat": 40.4600768933595,
+      "lon": -3.59275602120181,
       "source": "Madrid",
       "source_url": "https://datos.madrid.es/",
       "image_url": null,
