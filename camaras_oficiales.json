@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T22:59:42.197222",
-  "total": 2347,
+  "generated_at": "2026-10-11T01:34:14.197422",
+  "total": 2349,
   "cameras": [
     {
       "id": "mg_10900",
@@ -132,6 +132,30 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Portosin/ultima.jpg",
       "extra": {
         "concello": "Porto do Son"
+      }
+    },
+    {
+      "id": "mg_10049",
+      "name": "Corrubedo",
+      "lat": 42.5552,
+      "lon": -9.0286,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Corrubedo/ultima.jpg",
+      "extra": {
+        "concello": "Ribeira"
+      }
+    },
+    {
+      "id": "mg_10134",
+      "name": "Sálvora",
+      "lat": 42.47135,
+      "lon": -9.005851,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Salvora/ultima.jpg",
+      "extra": {
+        "concello": "Ribeira"
       }
     },
     {
