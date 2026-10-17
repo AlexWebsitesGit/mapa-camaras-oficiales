@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T21:05:23.002923",
-  "total": 2350,
+  "generated_at": "2026-10-17T23:32:44.227287",
+  "total": 2347,
   "cameras": [
     {
       "id": "mg_10900",
@@ -135,30 +135,6 @@
       }
     },
     {
-      "id": "mg_10049",
-      "name": "Corrubedo",
-      "lat": 42.5552,
-      "lon": -9.0286,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Corrubedo/ultima.jpg",
-      "extra": {
-        "concello": "Ribeira"
-      }
-    },
-    {
-      "id": "mg_10134",
-      "name": "Sálvora",
-      "lat": 42.47135,
-      "lon": -9.005851,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Salvora/ultima.jpg",
-      "extra": {
-        "concello": "Ribeira"
-      }
-    },
-    {
       "id": "mg_10085",
       "name": "Corón",
       "lat": 42.5801,
@@ -252,18 +228,6 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Castrove/ultima.jpg",
       "extra": {
         "concello": "Poio"
-      }
-    },
-    {
-      "id": "mg_10906",
-      "name": "Cangas",
-      "lat": 42.26044,
-      "lon": -8.782591,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cangas/ultima.jpg",
-      "extra": {
-        "concello": "Cangas"
       }
     },
     {
