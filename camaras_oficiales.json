@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T08:55:36.101775",
+  "generated_at": "2026-10-20T13:55:53.401595",
   "total": 2363,
   "cameras": [
     {
@@ -5302,7 +5302,7 @@
     },
     {
       "id": "dgt_327",
-      "name": "A-7 - km 1040.0 - (MÁLAGA)",
+      "name": "A-7 - km 1039.95 - (MÁLAGA)",
       "lat": 36.5053,
       "lon": -4.84517,
       "source": "DGT",
@@ -5310,7 +5310,7 @@
       "image_url": "https://etraffic.dgt.es/camarasEtraffic/201.jpg",
       "extra": {
         "road": "A-7",
-        "km": "1040.0",
+        "km": "1039.95",
         "province": "MÁLAGA",
         "type": "camera"
       }
@@ -6367,7 +6367,7 @@
     },
     {
       "id": "dgt_398",
-      "name": "A-92M - km 0.475 - (MÁLAGA)",
+      "name": "A-92M - km 0.635 - (MÁLAGA)",
       "lat": 37.1278,
       "lon": -4.29172,
       "source": "DGT",
@@ -6375,7 +6375,7 @@
       "image_url": "https://etraffic.dgt.es/camarasEtraffic/262.jpg",
       "extra": {
         "road": "A-92M",
-        "km": "0.475",
+        "km": "0.635",
         "province": "MÁLAGA",
         "type": "camera"
       }
