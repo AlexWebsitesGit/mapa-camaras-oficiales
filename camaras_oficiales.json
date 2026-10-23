@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T02:08:15.934986",
-  "total": 2362,
+  "generated_at": "2026-10-23T07:59:30.524387",
+  "total": 2363,
   "cameras": [
     {
       "id": "mg_10900",
@@ -300,6 +300,18 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Ancares/ultima.jpg",
       "extra": {
         "concello": "Cervantes"
+      }
+    },
+    {
+      "id": "mg_10132",
+      "name": "O Cebreiro",
+      "lat": 42.707184,
+      "lon": -7.047038,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cebreiro/ultima.jpg",
+      "extra": {
+        "concello": "Pedrafita do Cebreiro"
       }
     },
     {
