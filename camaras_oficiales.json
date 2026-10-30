@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T02:12:14.633407",
-  "total": 2362,
+  "generated_at": "2026-10-30T09:07:41.748203",
+  "total": 2363,
   "cameras": [
     {
       "id": "mg_10900",
@@ -252,6 +252,18 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Castrove/ultima.jpg",
       "extra": {
         "concello": "Poio"
+      }
+    },
+    {
+      "id": "mg_10906",
+      "name": "Cangas",
+      "lat": 42.26044,
+      "lon": -8.782591,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cangas/ultima.jpg",
+      "extra": {
+        "concello": "Cangas"
       }
     },
     {
