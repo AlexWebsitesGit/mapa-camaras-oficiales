@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T18:21:35.415281",
-  "total": 2365,
+  "generated_at": "2026-11-05T23:52:25.259897",
+  "total": 2363,
   "cameras": [
     {
       "id": "mg_10900",
@@ -123,18 +123,6 @@
       }
     },
     {
-      "id": "mg_10902",
-      "name": "Portosín",
-      "lat": 42.7656,
-      "lon": -8.94848,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Portosin/ultima.jpg",
-      "extra": {
-        "concello": "Porto do Son"
-      }
-    },
-    {
       "id": "mg_10049",
       "name": "Corrubedo",
       "lat": 42.5552,
@@ -168,18 +156,6 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Coron/ultima.jpg",
       "extra": {
         "concello": "Vilanova de Arousa"
-      }
-    },
-    {
-      "id": "mg_10133",
-      "name": "Xesteiras",
-      "lat": 42.6756,
-      "lon": -8.58618,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Radar/ultima.jpg",
-      "extra": {
-        "concello": "Cuntis"
       }
     },
     {
