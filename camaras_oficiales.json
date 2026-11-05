@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T10:08:24.599478",
+  "generated_at": "2026-11-05T18:21:35.415281",
   "total": 2365,
   "cameras": [
     {
@@ -20917,15 +20917,15 @@
     },
     {
       "id": "dgt_1368",
-      "name": "ARA-A1 - km 0.46 - (ZARAGOZA)",
-      "lat": 41.58046,
-      "lon": -0.6602653,
+      "name": "ARA-A1 - km 0.53 - (ZARAGOZA)",
+      "lat": 41.577072,
+      "lon": -0.662864,
       "source": "DGT",
       "source_url": "https://nap.dgt.es/",
       "image_url": "https://etraffic.dgt.es/camarasEtraffic/169206.jpg",
       "extra": {
         "road": "ARA-A1",
-        "km": "0.46",
+        "km": "0.53",
         "province": "ZARAGOZA",
         "type": "camera"
       }
@@ -20948,8 +20948,8 @@
     {
       "id": "dgt_1370",
       "name": "ARA-A1 - km 0.88 - (ZARAGOZA)",
-      "lat": 41.577103,
-      "lon": -0.6629733,
+      "lat": 41.577072,
+      "lon": -0.662864,
       "source": "DGT",
       "source_url": "https://nap.dgt.es/",
       "image_url": "https://etraffic.dgt.es/camarasEtraffic/169207.jpg",
@@ -20992,15 +20992,15 @@
     },
     {
       "id": "dgt_1373",
-      "name": "ARA-A1 - km 0.05 - (ZARAGOZA)",
-      "lat": 41.582718,
-      "lon": -0.6574181,
+      "name": "ARA-A1 - km 0.3 - (ZARAGOZA)",
+      "lat": 41.5828,
+      "lon": -0.657185,
       "source": "DGT",
       "source_url": "https://nap.dgt.es/",
       "image_url": "https://etraffic.dgt.es/camarasEtraffic/169205.jpg",
       "extra": {
         "road": "ARA-A1",
-        "km": "0.05",
+        "km": "0.3",
         "province": "ZARAGOZA",
         "type": "camera"
       }
@@ -21052,15 +21052,15 @@
     },
     {
       "id": "dgt_1377",
-      "name": "ARA-A1 - km 4.58 - (ZARAGOZA)",
-      "lat": 41.55147,
-      "lon": -0.6892737,
+      "name": "ARA-A1 - km 4.47 - (ZARAGOZA)",
+      "lat": 41.551426,
+      "lon": -0.689171,
       "source": "DGT",
       "source_url": "https://nap.dgt.es/",
       "image_url": "https://etraffic.dgt.es/camarasEtraffic/169208.jpg",
       "extra": {
         "road": "ARA-A1",
-        "km": "4.58",
+        "km": "4.47",
         "province": "ZARAGOZA",
         "type": "camera"
       }
@@ -21082,15 +21082,15 @@
     },
     {
       "id": "dgt_1379",
-      "name": "ARA-A1 - km 5.255 - (ZARAGOZA)",
-      "lat": 41.54626,
-      "lon": -0.6945209,
+      "name": "ARA-A1 - km 5.25 - (ZARAGOZA)",
+      "lat": 41.546238,
+      "lon": -0.694452,
       "source": "DGT",
       "source_url": "https://nap.dgt.es/",
       "image_url": "https://etraffic.dgt.es/camarasEtraffic/169209.jpg",
       "extra": {
         "road": "ARA-A1",
-        "km": "5.255",
+        "km": "5.25",
         "province": "ZARAGOZA",
         "type": "camera"
       }
