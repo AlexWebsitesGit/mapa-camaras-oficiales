@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T17:10:13.889579",
-  "total": 2365,
+  "generated_at": "2026-11-12T22:54:56.003196",
+  "total": 2366,
   "cameras": [
     {
       "id": "mg_10900",
@@ -372,6 +372,18 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Monforte/ultima.jpg",
       "extra": {
         "concello": "Monforte de Lemos"
+      }
+    },
+    {
+      "id": "mg_10912",
+      "name": "Cristosende",
+      "lat": 42.386322,
+      "lon": -7.488853,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cristosende/ultima.jpg",
+      "extra": {
+        "concello": "A Teixeira"
       }
     },
     {
