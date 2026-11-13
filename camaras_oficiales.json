@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T18:11:35.922601",
-  "total": 2366,
+  "generated_at": "2026-11-13T23:57:50.545759",
+  "total": 2363,
   "cameras": [
     {
       "id": "mg_10900",
@@ -147,18 +147,6 @@
       }
     },
     {
-      "id": "mg_10134",
-      "name": "Sálvora",
-      "lat": 42.47135,
-      "lon": -9.005851,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Salvora/ultima.jpg",
-      "extra": {
-        "concello": "Ribeira"
-      }
-    },
-    {
       "id": "mg_10085",
       "name": "Corón",
       "lat": 42.5801,
@@ -168,18 +156,6 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Coron/ultima.jpg",
       "extra": {
         "concello": "Vilanova de Arousa"
-      }
-    },
-    {
-      "id": "mg_10133",
-      "name": "Xesteiras",
-      "lat": 42.6756,
-      "lon": -8.58618,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Radar/ultima.jpg",
-      "extra": {
-        "concello": "Cuntis"
       }
     },
     {
@@ -372,18 +348,6 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Monforte/ultima.jpg",
       "extra": {
         "concello": "Monforte de Lemos"
-      }
-    },
-    {
-      "id": "mg_10912",
-      "name": "Cristosende",
-      "lat": 42.386322,
-      "lon": -7.488853,
-      "source": "MeteoGalicia",
-      "source_url": "https://servizos.meteogalicia.gal/",
-      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Cristosende/ultima.jpg",
-      "extra": {
-        "concello": "A Teixeira"
       }
     },
     {
