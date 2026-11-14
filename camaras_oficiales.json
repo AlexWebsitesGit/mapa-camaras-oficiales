@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T23:57:50.545759",
-  "total": 2363,
+  "generated_at": "2026-11-14T04:31:13.541130",
+  "total": 2364,
   "cameras": [
     {
       "id": "mg_10900",
@@ -156,6 +156,18 @@
       "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Coron/ultima.jpg",
       "extra": {
         "concello": "Vilanova de Arousa"
+      }
+    },
+    {
+      "id": "mg_10133",
+      "name": "Xesteiras",
+      "lat": 42.6756,
+      "lon": -8.58618,
+      "source": "MeteoGalicia",
+      "source_url": "https://servizos.meteogalicia.gal/",
+      "image_url": "https://www.meteogalicia.gal/datosred/camaras/MeteoGalicia/Radar/ultima.jpg",
+      "extra": {
+        "concello": "Cuntis"
       }
     },
     {
